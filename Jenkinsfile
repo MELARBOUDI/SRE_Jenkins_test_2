@@ -31,4 +31,7 @@ pipeline {
     }
 
   }
+  environment {
+    CURRENT_DATE = '${new Date().format(\'yyyyMMddHHmmss\')}'
+  }
 }
