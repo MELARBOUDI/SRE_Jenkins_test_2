@@ -30,6 +30,12 @@ pipeline {
       }
     }
 
+    stage('TAR GZ : Etape 1  ') {
+      steps {
+        sh 'sh \'echo "${CURRENT_DATE}" > var.txt\''
+      }
+    }
+
   }
   environment {
     CURRENT_DATE = '${new Date().format(\'yyyyMMddHHmmss\')}'
