@@ -32,7 +32,7 @@ pipeline {
 
     stage('TAR GZ : Etape 1  ') {
       steps {
-        sh 'sh \'echo "${CURRENT_DATE}" > var.txt\''
+        sh '\'echo "${CURRENT_DATE}" > var.txt\''
       }
     }
 
